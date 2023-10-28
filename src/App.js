@@ -1,14 +1,15 @@
+
 import { Provider } from 'react-redux';
 import './App.css';
-import store from './redux/store/Store';
-import ListTask from './Components/ListTask';
-import DemoCustomLs from './DemoCustomLs';
-import FetchHook from './DemoHooks/FetchHook';
+import Home from './reduxToolkit/pages/Home';
+import store from './reduxToolkit/redux/store';
 
 
 function App() {
   return (
-    <FetchHook />
+    <Provider store={store}>
+      <Home />
+    </Provider>
   );
 }
 
