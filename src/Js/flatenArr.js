@@ -20,6 +20,25 @@ function fltRdc(arr) {
 }
 console.log(fltRdc(arr))
 
+//---obj and arr both 
+function fltObj(arr) {
+    let res = [];
+    arr.forEach((item) => {
+        if (Array.isArray(item)) {
+            res.push(...flt(item))
+        } else if (typeof item === 'object') {
+            res.push(Number(Object.values(item).join('')))
+        } else {
+            res.push(item)
+        }
+    })
+    return res
+}
+
+console.log(fltObj([1, 2, { '3': 3 }, [4, 5], 6]))
+
+
+//single digit array
 const ar = [8, 22222, 333, 99999];
 
 function singleDigit(num) {
