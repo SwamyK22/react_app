@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 12rem);
+    max-width: 50rem;
+    margin-inline: auto;
+    gap: 10px;
+}
+
+.container>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition:
+        scale 350ms ease,
+        opacity 350ms linear;
+}
+
+/* .container>img:not(:hover) {
+    scale: .8;
+    opacity: .7;
+} */
+
+.container:has(img:hover)>img:not(:hover) {
+    scale: .8;
+    opacity: .7;
+}

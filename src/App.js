@@ -1,15 +1,12 @@
 
-import { Provider } from 'react-redux';
 import './App.css';
-import Home from './reduxToolkit/pages/Home';
-import store from './reduxToolkit/redux/store';
+import Gellary from './Components/Gellary/Gellary';
+import AppCodeSplit from './codeSplitEx/App'
 
 
 function App() {
   return (
-    <Provider store={store}>
-      <Home />
-    </Provider>
+    <Gellary />
   );
 }
 
