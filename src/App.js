@@ -1,13 +1,11 @@
 
 import './App.css';
-import DynamicImport from './Components/Gellary/DynamicImport';
-import Gellary from './Components/Gellary/Gellary';
-import AppCodeSplit from './codeSplitEx/App'
+import Demo from './Components/Demo/Demo';
 
 
 function App() {
   return (
-    <DynamicImport />
+    <Demo />
   );
 }
 

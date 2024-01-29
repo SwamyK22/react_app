@@ -18,4 +18,4 @@ function useLocalStorage(key, inItVal) {
     return [storedValue, setValue, removeVal];
 }
 
-export default useLocalStorage
+export default useLocalStorage;
